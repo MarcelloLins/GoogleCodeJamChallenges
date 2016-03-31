@@ -1,6 +1,6 @@
 # File Handling
 with open('Inputs/B-large-practice.in', 'r') as f_reader:
-    with open('B-large-practice.out' ,'w') as f_writer:
+    with open('Outputs/B-large-practice.out' ,'w') as f_writer:
     
         # Number of test cases
         test_cases = int(f_reader.readline())
