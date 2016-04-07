@@ -17,13 +17,13 @@ with open('Inputs/A-large-practice.in', 'r') as f_reader:
             product_prices = map(lambda x: int(x), product_prices.split(' '))
             
             # Array Indexes used to navigate through
-            anchor_idx, current_idx, found_sum = 0, 0, False
+            anchor_idx, current_idx, found_sum, price_too_high = 0, 0, False, False
             
             print 'Test Case #%d' % test_case
             
             # Iterating over list elements
             while anchor_idx < products_count and not found_sum:
-                
+                                
                 # Avoids having to iterate through the array
                 current_idx = anchor_idx + 1
                 while current_idx < products_count:
@@ -33,6 +33,10 @@ with open('Inputs/A-large-practice.in', 'r') as f_reader:
                     current_price = product_prices[current_idx] 
                     products_sum = anchor_price + current_price
                 
+                    # Code Optimization (If the Anchor Value is already greater than the sum value itself, there's no reason to keep trying to sum it with the next values)
+                    if anchor_price > store_credit:
+                        break
+                    
                     # Have we found the sum ?
                     if products_sum == store_credit:
                         print '%d + %d = %d' % (anchor_price, current_price, products_sum)
@@ -45,11 +49,9 @@ with open('Inputs/A-large-practice.in', 'r') as f_reader:
                             f_writer.write((output_line % (test_case, current_idx + 1, anchor_idx + 1)));
                         found_sum = True
                         break
-                
-                    current_idx = current_idx + 1
-            
-                anchor_idx = anchor_idx + 1
-            
+
+                    current_idx = current_idx + 1         
+                anchor_idx = anchor_idx + 1            
             test_case = test_case + 1
 
 print 'End of Challenge'
