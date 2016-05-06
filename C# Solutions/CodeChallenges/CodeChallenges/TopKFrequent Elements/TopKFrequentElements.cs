@@ -13,6 +13,9 @@ namespace CodeChallenges.TopKFrequent_Elements
          *   - Iterates through the array building a dictionary of frequencies of each found integer
          *   - Sorts the Dictionary in Reverse order
          *   - Take the first K elements of the sorted collection
+         *   
+         * 
+         *   - Time Complexity: O(n Log(n)) + K = O(n Log(n))
          */
 
         /// <summary>

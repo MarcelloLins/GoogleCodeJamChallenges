@@ -8,18 +8,20 @@ namespace CodeChallenges
 {
     class ReverseVowels
     {
-         /**
-         *  Implementation: 
-         *   - Sets two pointers, at the end and at the start of the string
-         *   - Moves the left-most pointer to the right until it finds a vowel
-         *   - If a Vowel is found, moves the other pointer to the left, until a vowel is found
-          *  - Once both vowels are found, swaps them
-          * 
-          * 
-          * Notes: 
-          *     - An integer is kept to keep track whether the two vowels were found so the swap routine can trigger.
-          *     - C# Strings are immutable, hence, I had to work with Char[] instead to do the swapping of the vowels
-          *     - There's an extra routine I wrote to check whether a character is a Vowel or not.          * 
+        /**
+        *  Implementation: 
+        *   - Sets two pointers, at the end and at the start of the string
+        *   - Moves the left-most pointer to the right until it finds a vowel
+        *   - If a Vowel is found, moves the other pointer to the left, until a vowel is found
+         *  - Once both vowels are found, swaps them
+         * 
+         * 
+         * Notes: 
+         *     - An integer is kept to keep track whether the two vowels were found so the swap routine can trigger.
+         *     - C# Strings are immutable, hence, I had to work with Char[] instead to do the swapping of the vowels
+         *     - There's an extra routine I wrote to check whether a character is a Vowel or not.         
+         *     
+         *     - Time Complexity: O(n)
          */
 
 
