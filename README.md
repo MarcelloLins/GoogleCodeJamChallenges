@@ -1,7 +1,7 @@
 # Programming Challenges
 
-A python repository dedicated to solving past GoogleCodeJam Challenges and Implementing Cool neaty Programming Algorithms
+A python / C# repository dedicated to solving past GoogleCodeJam Challenges and Implementing Cool neaty Programming Algorithms from sites such as LeetCode and HackerRank
 
-In case of Google JAM Challenges, each one is in it's own folder, and it's description can be find in it's "Problem.md" file inside each folder
+Each problem description can be found in a "Problem.md" file inside each challenge folder
 
 Challenge yourself. Have fun :)
