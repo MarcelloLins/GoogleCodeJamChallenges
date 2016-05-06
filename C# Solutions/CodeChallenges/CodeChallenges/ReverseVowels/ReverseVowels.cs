@@ -33,7 +33,7 @@ namespace CodeChallenges
         /// </summary>
         /// <param name="s">The word</param>
         /// <returns>Same string with the vowels reversed</returns>
-        public static string ReverseVowels (string s)
+        public static string ReverseVowelsMethod (string s)
         {
             // Indexes / Pointers
             int lowerIdx = 0;
